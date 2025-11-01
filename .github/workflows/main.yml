@@ -1,12 +1,15 @@
-name: Update leetCode files
+name: Python Commit
 
 on:
   schedule:
-    - cron: "0 9 * * *"  # Runs daily at 9 AM UTC
+    - cron: "0 10,12,18 * * *"  # Runs 3 times per day (6 AM, 12 PM, 6 PM UTC)
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
-  random_python_commit:
+  python_commit:
     runs-on: ubuntu-latest
 
     steps:
@@ -20,20 +23,22 @@ jobs:
             echo "No Python files found."
             exit 0
           fi
-          
+
           FILE=$(echo "$PY_FILES" | shuf -n 1)
+          BASENAME=$(basename "$FILE")
           echo "Selected file: $FILE"
 
           TMP_FILE=$(mktemp)
-          BASENAME=$(basename "$FILE")
           echo "# $BASENAME" > "$TMP_FILE"
           cat "$FILE" >> "$TMP_FILE"
           mv "$TMP_FILE" "$FILE"
 
       - name: Commit and push changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
         run: |
-          git config user.name "github-actions"
-          git config user.email "actions@github.com"
+          git config user.name "Amit Mittal"
+          git config user.email "amitarmittal@gmail.com"
           git add .
-          git commit -m "Added comment $(BASENAME)" || echo "No changes to commit"
-          git push
+          git commit -m "Added $(BASENAME)" || echo "No changes to commit"
+          git push https://x-access-token:${GITHUB_TOKEN}@github.com/amitmittal117/leetcode.git HEAD:main
