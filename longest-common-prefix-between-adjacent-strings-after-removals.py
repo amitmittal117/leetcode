@@ -1,3 +1,4 @@
+# longest-common-prefix-between-adjacent-strings-after-removals.py
 # Time:  O(n * l)
 # Space: O(n)
 
