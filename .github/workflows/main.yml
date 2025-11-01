@@ -40,5 +40,5 @@ jobs:
           git config user.name "Amit Mittal"
           git config user.email "amitarmittal@gmail.com"
           git add .
-          git commit -m "Added $(BASENAME)" || echo "No changes to commit"
+          git commit -m "Added file name" || echo "No changes to commit"
           git push https://x-access-token:${GITHUB_TOKEN}@github.com/amitmittal117/leetcode.git HEAD:main
