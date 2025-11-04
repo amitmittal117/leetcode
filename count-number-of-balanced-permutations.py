@@ -1,3 +1,4 @@
+# count-number-of-balanced-permutations.py
 # Time:  O(9 * (9 * n / 2) * (n / 2)) = O(n^2)
 # Space: O((9 * n / 2) * (n / 2)) = O(n^2)
 
