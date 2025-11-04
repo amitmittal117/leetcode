@@ -2,7 +2,7 @@ name: Python Commit
 
 on:
   schedule:
-    - cron: "0 10,12,18 * * *"  # Runs 3 times per day (6 AM, 12 PM, 6 PM UTC)
+    - cron: "0 */2 * * *"  # Runs every 2 hours
   workflow_dispatch:
 
 permissions:
@@ -16,7 +16,22 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
+      - name: Random chance to run
+        id: random_decision
+        run: |
+          # 50% chance to skip
+          CHANCE=$(( RANDOM % 2 ))
+          echo "Random chance value: $CHANCE"
+          if [ "$CHANCE" -eq 0 ]; then
+            echo "run_commit=false" >> $GITHUB_OUTPUT
+            echo "Skipping this run randomly."
+          else
+            echo "run_commit=true" >> $GITHUB_OUTPUT
+            echo "Proceeding with commit."
+          fi
+
       - name: Pick a random Python file and modify it
+        if: steps.random_decision.outputs.run_commit == 'true'
         run: |
           PY_FILES=$(find . -type f -name "*.py" ! -path "./.git/*" ! -path "./.github/*")
           if [ -z "$PY_FILES" ]; then
@@ -34,11 +49,12 @@ jobs:
           mv "$TMP_FILE" "$FILE"
 
       - name: Commit and push changes
+        if: steps.random_decision.outputs.run_commit == 'true'
         env:
           GITHUB_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
         run: |
           git config user.name "Amit Mittal"
           git config user.email "amitarmittal@gmail.com"
           git add .
-          git commit -m "Added file name" || echo "No changes to commit"
+          git commit -m "Added $BASENAME" || echo "No changes to commit"
           git push https://x-access-token:${GITHUB_TOKEN}@github.com/amitmittal117/leetcode.git HEAD:main
