@@ -1,3 +1,4 @@
+# guess-the-majority-in-a-hidden-array.py
 # Time:  O(n), n queries
 # Space: O(1)
 
