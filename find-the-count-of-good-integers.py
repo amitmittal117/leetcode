@@ -1,3 +1,4 @@
+# find-the-count-of-good-integers.py
 # Time:  O(n + 10 * 10^((n + 1)/2))
 # Space: O(n + 10 * (10 * nHr(10, n/2)))
 
