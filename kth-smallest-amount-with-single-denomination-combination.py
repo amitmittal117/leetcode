@@ -1,3 +1,4 @@
+# kth-smallest-amount-with-single-denomination-combination.py
 # Time:  O(n * 2^n * (log(mx) + log(k * mn))) = O(n * 2^n * logk), mn = min(coins), mx = max(coins)
 # Space: O(2^n)
 
