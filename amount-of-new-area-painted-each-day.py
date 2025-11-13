@@ -1,3 +1,4 @@
+# amount-of-new-area-painted-each-day.py
 # Time:  O(nlogn)
 # Space: O(n)
 
