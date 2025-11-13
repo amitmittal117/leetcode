@@ -1,3 +1,4 @@
+# average-salary-excluding-the-minimum-and-maximum-salary.py
 # Time:  O(n)
 # Space: O(1)
 
