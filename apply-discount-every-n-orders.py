@@ -1,3 +1,4 @@
+# apply-discount-every-n-orders.py
 # Time:  ctor:    O(m), m is the number of all products
 #        getBill: O(p), p is the number of products to bill
 # Space: O(m)
