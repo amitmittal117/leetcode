@@ -1,3 +1,4 @@
+# find-the-number-of-good-pairs-i.py
 # Time:  O(rlogr + n + m)
 # Space: O(r)
 
