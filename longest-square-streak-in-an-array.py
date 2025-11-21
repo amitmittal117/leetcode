@@ -1,3 +1,4 @@
+# longest-square-streak-in-an-array.py
 # Time:  O(nlogn)
 # Space: O(n)
 
