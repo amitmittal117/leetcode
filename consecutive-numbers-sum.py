@@ -1,3 +1,4 @@
+# consecutive-numbers-sum.py
 # Time:  O(sqrt(n))
 # Space: O(1)
 
