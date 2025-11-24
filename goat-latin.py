@@ -1,3 +1,4 @@
+# goat-latin.py
 # Time:  O(n + w^2), n = w * l,
 #                    n is the length of S,
 #                    w is the number of word,
