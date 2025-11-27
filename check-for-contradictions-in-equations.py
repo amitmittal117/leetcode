@@ -1,4 +1,5 @@
 # check-for-contradictions-in-equations.py
+# check-for-contradictions-in-equations.py
 # Time:  O(e + q)
 # Space: O(n)
 
