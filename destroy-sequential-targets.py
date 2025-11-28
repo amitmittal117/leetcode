@@ -1,3 +1,4 @@
+# destroy-sequential-targets.py
 # Time:  O(n)
 # Space: O(s), s is the value of space
 
