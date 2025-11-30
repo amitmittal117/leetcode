@@ -1,3 +1,4 @@
+# count-the-number-of-substrings-with-dominant-ones.py
 # Time:  O(n * sqrt(n)) = O(n^(3/2))
 # Space: O(n)
 
