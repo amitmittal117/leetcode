@@ -1,3 +1,4 @@
+# find-the-sum-of-subsequence-powers.py
 # Time:  O(n^2 + len(diffs) * n * k) = O(n^3 * k) at most
 # Space: O(len(diffs) + n * k) = O(n^2) at most
 
