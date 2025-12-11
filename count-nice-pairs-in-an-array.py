@@ -1,3 +1,4 @@
+# count-nice-pairs-in-an-array.py
 # Time:  O(nlogm), m is max of nums
 # Space: O(n)
 
