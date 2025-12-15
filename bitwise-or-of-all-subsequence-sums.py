@@ -1,3 +1,4 @@
+# bitwise-or-of-all-subsequence-sums.py
 # Time:  O(n)
 # Space: O(1)
 
