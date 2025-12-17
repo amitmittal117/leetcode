@@ -1,4 +1,5 @@
 # count-number-of-distinct-integers-after-reverse-operations.py
+# count-number-of-distinct-integers-after-reverse-operations.py
 # Time:  O(nlogr), r = max(nums)
 # Space: O(n)
 
