@@ -1,3 +1,4 @@
+# flatten-nested-list-iterator.py
 # Time:  O(n), n is the number of the integers.
 # Space: O(h), h is the depth of the nested lists.
 
