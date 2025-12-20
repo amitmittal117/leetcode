@@ -1,3 +1,4 @@
+# count-the-number-of-arrays-with-k-matching-adjacent-elements.py
 # Time:  O(n + logm)
 # Space: O(n)
 
