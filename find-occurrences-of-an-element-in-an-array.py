@@ -1,3 +1,4 @@
+# find-occurrences-of-an-element-in-an-array.py
 # Time:  O(n + q)
 # Space: O(n)
 
