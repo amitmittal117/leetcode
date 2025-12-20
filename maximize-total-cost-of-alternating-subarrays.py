@@ -1,4 +1,5 @@
 # maximize-total-cost-of-alternating-subarrays.py
+# maximize-total-cost-of-alternating-subarrays.py
 # Time:  O(n)
 # Space: O(1)
 
