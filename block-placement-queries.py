@@ -1,3 +1,4 @@
+# block-placement-queries.py
 # Time:  O(qlogq)
 # Space: O(q)
 
