@@ -1,3 +1,4 @@
+# distribute-candies-to-people.py
 # Time:  O(n + logc), c is the number of candies
 # Space: O(1)
 
