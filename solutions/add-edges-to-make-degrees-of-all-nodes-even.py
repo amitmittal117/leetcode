@@ -1,3 +1,9 @@
+# Pattern: Graph (Degree Parity)
+# INTUITION:
+# A graph has Eulerian properties when all nodes have even degree.
+# Only 0, 2, or 4 odd-degree nodes can be fixed with at most 2 edges.
+# 0 odds: done. 2 odds: find a common non-neighbor. 4 odds: pair them up.
+
 # add-edges-to-make-degrees-of-all-nodes-even.py
 # Time:  O(n)
 # Space: O(n)

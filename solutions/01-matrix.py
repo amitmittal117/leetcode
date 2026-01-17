@@ -1,3 +1,10 @@
+# Pattern: Multi-source BFS / Dynamic Programming (Matrix)
+# INTUITION:
+# Find distance to nearest 0 for each cell. Two approaches:
+# 1. DP: Two passes (top-left to bottom-right, then reverse) propagating min distances.
+# 2. BFS: Start from all 0s simultaneously, expand outward layer by layer.
+# Both achieve O(m*n) time. DP uses constant space if modifying in-place.
+
 # Time:  O(m * n)
 # Space: O(1)
 

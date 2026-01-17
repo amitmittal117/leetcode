@@ -1,3 +1,9 @@
+# Pattern: Two Pointers (k-Sum Variant)
+# INTUITION:
+# Count triplets with sum < target. Sort the array.
+# Fix the largest element k, use two pointers i, j for remaining pairs.
+# If sum < target, all pairs (i, i+1..j) are valid → add (j - i), then move i.
+
 # Time:  O(n^2)
 # Space: O(1)
 

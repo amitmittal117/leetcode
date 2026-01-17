@@ -1,3 +1,9 @@
+# Pattern: Math / Dynamic Programming
+# INTUITION:
+# Maximize 'A's with N keystrokes. After ~6 keys, Ctrl-A, Ctrl-C, Ctrl-V sequence pays off.
+# Optimal: mix of "copy-paste x3" (costs 4 keys) and "copy-paste x4" (costs 5 keys).
+# Result = 3^n3 * 4^n4 where n3 + n4 operations fit in N keystrokes.
+
 # Time:  O(1)
 # Space: O(1)
 

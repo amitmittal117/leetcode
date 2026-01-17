@@ -1,3 +1,9 @@
+# Pattern: Two Pointers (k-Sum Variant)
+# INTUITION:
+# Sort the array. Fix one element, then use two pointers on the rest.
+# Move pointers based on whether the sum is above or below the target.
+# Track the closest sum seen so far.
+
 # Time:  O(n^2)
 # Space: O(1)
 

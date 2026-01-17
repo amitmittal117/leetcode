@@ -1,3 +1,9 @@
+# Pattern: Backtracking / Recursion
+# INTUITION:
+# Try all ways to pick 2 numbers, apply +, -, *, / to get a new number.
+# Recursively reduce 4 numbers → 3 → 2 → 1. Check if result ≈ 24.
+# Use fractions or epsilon comparison for floating-point precision.
+
 # Time:  O(n^3 * 4^n) = O(1), n = 4
 # Space: O(n^2) = O(1)
 

@@ -1,3 +1,8 @@
+# Pattern: Trie + DFS (Wildcard Search)
+# INTUITION:
+# Use a Trie for efficient prefix storage. For search, traverse character by character.
+# On '.', branch into all children and recursively search. Return True if any path matches.
+
 # Time:  O(min(n, h)), per operation
 # Space: O(min(n, h))
 

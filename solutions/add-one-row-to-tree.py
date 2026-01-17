@@ -1,3 +1,9 @@
+# Pattern: Tree (DFS / Recursion)
+# INTUITION:
+# Insert a row of nodes with value v at depth d.
+# Traverse recursively. At depth d-1, create new nodes and attach existing subtrees.
+# Handle d=1 specially by creating a new root.
+
 # Time:  O(n)
 # Space: O(h)
 

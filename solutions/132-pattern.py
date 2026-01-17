@@ -1,3 +1,10 @@
+# Pattern: Monotonic Stack
+# INTUITION:
+# We need i < j < k with nums[i] < nums[k] < nums[j] (the "132" pattern).
+# Traverse from right to left, maintaining a decreasing stack.
+# Track the maximum "ak" (nums[k] candidate) popped from the stack.
+# If we find nums[i] < ak, we have found the pattern.
+
 # Time:  O(n)
 # Space: O(n)
 

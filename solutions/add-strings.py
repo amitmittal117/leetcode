@@ -1,3 +1,9 @@
+# Pattern: Math (String Addition / Carry Propagation)
+# INTUITION:
+# Simulate grade-school addition from right to left.
+# Add corresponding digits plus carry. Append result digit, update carry.
+# Continue until both strings exhausted and no carry remains.
+
 # add-strings.py
 # Time:  O(n)
 # Space: O(1)

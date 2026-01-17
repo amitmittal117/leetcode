@@ -1,3 +1,8 @@
+# Pattern: Union-Find (Disjoint Set Union)
+# INTUITION:
+# Emails belonging to the same account should be merged. Treat emails as nodes.
+# Union all emails in the same account. Group by root, sort, and attach name.
+
 # Time:  O(nlogn), n is the number of total emails,
 #                  and the max length ofemail is 320, p.s. {64}@{255}
 # Space: O(n)

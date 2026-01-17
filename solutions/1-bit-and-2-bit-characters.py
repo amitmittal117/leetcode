@@ -1,3 +1,9 @@
+# Pattern: Greedy / Bit Parity
+# INTUITION:
+# A 2-bit character starts with 1 and consumes the next bit.
+# Scan backwards from the second-to-last element: count consecutive 1s.
+# If that count is even, the last character is a 1-bit (single 0).
+
 # Time:  O(n)
 # Space: O(1)
 

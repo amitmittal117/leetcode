@@ -1,3 +1,9 @@
+# Pattern: Interval Marking / Trie
+# INTUITION:
+# Mark indices in s that are covered by any word in dict.
+# Merge overlapping/adjacent marked regions and wrap with <b>...</b>.
+# Trie approach: build trie of dict words, scan s to find all matches efficiently.
+
 # Time:  O(n * d * l), l is the average string length
 # Space: O(n)
 

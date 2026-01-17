@@ -1,3 +1,9 @@
+# Pattern: Greedy / Math
+# INTUITION:
+# For each gap between consecutive rungs (or ground to first rung),
+# calculate how many intermediate rungs are needed: ceil(gap / dist) - 1.
+# Sum these values for all gaps.
+
 # Time:  O(n)
 # Space: O(1)
 

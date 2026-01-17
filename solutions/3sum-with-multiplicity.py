@@ -1,3 +1,9 @@
+# Pattern: Counting + Combinatorics
+# INTUITION:
+# Count occurrences of each value. Iterate over pairs (i, j) with i <= j.
+# Compute k = target - i - j. Handle three cases:
+# i == j == k, i == j != k, and i < j < k using combination formulas.
+
 # Time:  O(n^2), n is the number of disctinct A[i]
 # Space: O(n)
 

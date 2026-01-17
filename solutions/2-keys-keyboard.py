@@ -1,3 +1,9 @@
+# Pattern: Math (Prime Factorization)
+# INTUITION:
+# Copy-paste to get n 'A's. Each "copy all + paste k times" multiplies count by (k+1).
+# Minimum steps = sum of prime factors of n.
+# E.g., n=12 = 2*2*3 → 2+2+3 = 7 steps.
+
 # Time:  O(sqrt(n))
 # Space: O(1)
 
