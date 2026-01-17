@@ -8,10 +8,11 @@
 
 Files with `# Pattern:` tag = processed.
 ```bash
-findstr /M "# Pattern:" *.py    # Windows
+findstr /S /M "# Pattern:" solutions\*.py    # Windows recursive
 ```
 
-**Current count: 39 / 3056 files processed**
+**Current count: 104 / 3056 files processed**
+
 
 ---
 
@@ -42,6 +43,10 @@ For company-specific or topic-specific question sets:
 |-------|-------------|
 | 1-2 (23) | binary-search, 3sum, container-with-most-water, longest-substring, add-two-numbers, reverse-linked-list, merge-two-sorted-lists, linked-list-cycle, valid-parentheses, daily-temperatures, number-of-islands, course-schedule, climbing-stairs, coin-change, house-robber, longest-increasing-subsequence, word-break, search-in-rotated, trapping-rain-water, subsets, permutations, combination-sum, minimum-window-substring |
 | 3 (16) | two-sum, best-time-to-buy-and-sell-stock, edit-distance, jump-game, product-of-array-except-self, rotate-image, group-anagrams, merge-intervals, median-of-two-sorted-arrays, find-minimum-in-rotated, spiral-matrix, set-matrix-zeroes, palindrome-linked-list, lru-cache, validate-binary-search-tree, longest-palindromic-substring |
+| 4 (10) | unique-paths, sort-colors, letter-combinations, generate-parentheses, move-zeroes, missing-number, power-of-two, reverse-bits, single-number, counting-bits |
+| 5 (19) | next-greater-element-i/ii, implement-queue/stack, min-stack, serialize-deserialize-binary-tree, lca-bst, level-order-traversal, n-queens, word-search, longest-common-prefix, plus-one, happy-number, roman-to-int, atoi, sqrtx, merge-k-sorted, top-k-frequent, kth-smallest-bst, copy-list-random |
+| 6 (36) | reorder-list, sort-list, odd-even-linked-list, add-binary, multiply-strings, powx-n, partition-list, randomized-set, basic-calculator-ii, rpn, 4sum, palindrome-partitioning, largest-number, gas-station, single-number-ii, excel-sheet, majority-element, duplicate-number, pascals-triangle, rotate-array, etc. |
+
 
 ---
 
