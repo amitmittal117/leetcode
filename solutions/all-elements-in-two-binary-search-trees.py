@@ -1,3 +1,9 @@
+# Pattern: Tree (Inorder Traversal + Merge)
+# INTUITION:
+# Inorder traversal of BST gives sorted order.
+# Use two generators for lazy inorder traversal of both trees.
+# Merge the two sorted streams like merge sort.
+
 # Time:  O(n)
 # Space: O(h)
 

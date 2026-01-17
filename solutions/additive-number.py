@@ -1,3 +1,9 @@
+# Pattern: Backtracking / String (Fibonacci-like Validation)
+# INTUITION:
+# Try all pairs (first, second) numbers. Validate rest is Fibonacci-like.
+# Each next number = previous two summed. Handle leading zeros.
+# String addition avoids overflow.
+
 # Time:  O(n^3)
 # Space: O(n)
 

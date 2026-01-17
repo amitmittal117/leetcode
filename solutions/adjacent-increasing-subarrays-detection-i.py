@@ -1,3 +1,9 @@
+# Pattern: Array (Running Length Tracking)
+# INTUITION:
+# Track length of current and previous strictly increasing subarrays.
+# Answer = max(curr//2, min(prev, curr)) for adjacent subarrays of length k.
+# Reset current when sequence breaks.
+
 # Time:  O(n)
 # Space: O(1)
 

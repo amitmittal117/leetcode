@@ -1,3 +1,9 @@
+# Pattern: Linked List (Stack + Carry Propagation)
+# INTUITION:
+# Numbers stored with most significant digit first (reverse of add-two-numbers).
+# Use stacks to reverse the order, then add with carry from LSB to MSB.
+# Build result list in reverse by prepending nodes.
+
 # Time:  O(m + n)
 # Space: O(m + n)
 

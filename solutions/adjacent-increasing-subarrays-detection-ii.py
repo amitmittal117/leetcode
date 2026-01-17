@@ -1,3 +1,9 @@
+# Pattern: Array (Running Length Tracking)
+# INTUITION:
+# Find maximum k such that two adjacent strictly increasing subarrays of length k exist.
+# Track current and previous increasing lengths.
+# Max k = max(curr//2, min(prev, curr)).
+
 # adjacent-increasing-subarrays-detection-ii.py
 # adjacent-increasing-subarrays-detection-ii.py
 # Time:  O(n)

@@ -1,3 +1,9 @@
+# Pattern: Math (Carry Propagation)
+# INTUITION:
+# Add K to array representation of integer from least significant digit.
+# Propagate carry through the array, appending new digits as needed.
+# Similar to grade-school addition.
+
 # add-to-array-form-of-integer.py
 # Time:  O(n + logk)
 # Space: O(1)

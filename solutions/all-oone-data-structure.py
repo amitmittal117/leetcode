@@ -1,3 +1,9 @@
+# Pattern: Design (Doubly Linked List + Hash Map)
+# INTUITION:
+# O(1) inc/dec/getMax/getMin requires tracking keys by count.
+# Use doubly linked list of "buckets", each bucket holds keys with same count.
+# Hash map: key → bucket. Move keys between buckets on inc/dec.
+
 # Time:  O(1), per operation
 # Space: O(k)
 

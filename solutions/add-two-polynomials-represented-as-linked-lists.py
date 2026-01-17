@@ -1,3 +1,9 @@
+# Pattern: Linked List (Merge Two Lists)
+# INTUITION:
+# Polynomials as linked lists sorted by power (descending).
+# Merge like merge-sort: compare powers, combine coefficients if equal.
+# Skip terms with zero coefficient after addition.
+
 # Time:  O(m + n)
 # Space: O(1)
 

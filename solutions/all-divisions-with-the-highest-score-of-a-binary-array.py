@@ -1,3 +1,9 @@
+# Pattern: Prefix Sum / Array Scanning
+# INTUITION:
+# Score at index i = (zeros in left part) + (ones in right part).
+# Track running count of zeros as we scan. Right ones = total - i + zeros.
+# Track indices with maximum score.
+
 # Time:  O(n)
 # Space: O(1)
 

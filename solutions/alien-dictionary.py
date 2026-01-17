@@ -1,3 +1,9 @@
+# Pattern: Graph (Topological Sort - BFS/DFS)
+# INTUITION:
+# Build a graph of character ordering from adjacent word pairs.
+# First differing character defines an edge: char1 → char2.
+# Use topological sort to find valid ordering. Detect cycles for invalid input.
+
 # Time:  O(n)
 # Space: O(|V|+|E|) = O(26 + 26^2) = O(1)
 

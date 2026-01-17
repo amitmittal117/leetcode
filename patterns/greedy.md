@@ -42,6 +42,7 @@ def greedy_solution(items):
 | [Non-overlapping Intervals](../solutions/non-overlapping-intervals.py) | Sort by end time |
 | [Merge Intervals](../solutions/merge-intervals.py) | Sort by start time |
 | [Task Scheduler](../solutions/lemonade-change.py) | Process greedily |
+| [Advantage Shuffle](../solutions/advantage-shuffle.py) | Sort + greedy matching ✅ |
 
 ---
 

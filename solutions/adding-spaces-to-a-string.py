@@ -1,3 +1,8 @@
+# Pattern: String (In-place Shifting)
+# INTUITION:
+# Insert spaces at given indices. Process from right to left to avoid
+# shifting already-placed characters. Extend array first, then shift.
+
 # Time:  O(n)
 # Space: O(1)
 

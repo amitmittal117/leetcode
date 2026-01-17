@@ -1,3 +1,10 @@
+# Pattern: Graph (DFS / BFS / Topological Sort)
+# INTUITION:
+# Find all ancestors for each node in a DAG.
+# Option 1: DFS from each node, marking reachable descendants.
+# Option 2: Topological sort, propagating ancestor sets downstream.
+# Option 3: Reverse graph, BFS from each node to find ancestors.
+
 # Time:  O(|V| * |E|)
 # Space: O(|V| + |E|)
 

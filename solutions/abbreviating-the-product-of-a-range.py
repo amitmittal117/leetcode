@@ -1,3 +1,9 @@
+# Pattern: Math (Modular Arithmetic / Logarithms)
+# INTUITION:
+# Compute product of range, track trailing zeros (from factors of 10).
+# For prefix: use logarithms to get leading digits without overflow.
+# For suffix: keep only last k digits via modular arithmetic.
+
 # Time:  O(r - l)
 # Space: O(1)
 

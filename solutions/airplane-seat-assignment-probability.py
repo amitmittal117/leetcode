@@ -1,3 +1,10 @@
+# Pattern: Math / Dynamic Programming (Probability)
+# INTUITION:
+# First person picks random seat. Last person gets their seat if:
+# - First picked their own (prob 1/n), OR
+# - Someone before last displaced first's seat.
+# For n >= 2, probability converges to 0.5.
+
 # Time:  O(1)
 # Space: O(1)
 

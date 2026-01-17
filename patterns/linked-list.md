@@ -98,6 +98,8 @@ def find_middle(head):
 | [reorder-list](../solutions/reorder-list.py) | Medium | Find mid + reverse + merge ✅ |
 | [copy-list-with-random-pointer](../solutions/copy-list-with-random-pointer.py) | Medium | Interweaving or hash map ✅ |
 | [add-strings](../solutions/add-strings.py) | Easy | Carry propagation ✅ |
+| [add-two-numbers-ii](../solutions/add-two-numbers-ii.py) | Medium | Stack + reverse ✅ |
+| [add-two-polynomials](../solutions/add-two-polynomials-represented-as-linked-lists.py) | Medium | Merge lists ✅ |
 
 ---
 

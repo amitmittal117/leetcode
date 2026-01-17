@@ -1,3 +1,9 @@
+# Pattern: Greedy (Sorting + Matching)
+# INTUITION:
+# Maximize advantage: for each B[i], use smallest A[j] that beats it.
+# Sort both arrays. Greedily match A elements to B elements.
+# If A[j] can't beat current B, save it for later (others array).
+
 # Time:  O(nlogn)
 # Space: O(n)
 

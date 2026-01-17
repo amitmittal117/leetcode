@@ -1,3 +1,7 @@
+# Pattern: Math (Basic Addition)
+# INTUITION:
+# Simply return the sum of two integers. Trivial problem.
+
 # Time:  O(1)
 # Space: O(1)
 

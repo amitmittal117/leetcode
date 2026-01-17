@@ -1,3 +1,9 @@
+# Pattern: Sliding Window + Hash Map (Time-based Grouping)
+# INTUITION:
+# Group times by person. Sort each person's times.
+# Use sliding window to check if ≥3 accesses within 60 minutes.
+# If window size ≥ threshold and time diff ≤ 60, flag the person.
+
 # Time:  O(nlogn)
 # Space: O(n)
 

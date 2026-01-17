@@ -58,6 +58,9 @@ def dfs(graph, node, visited):
 | [Clone Graph](../solutions/clone-graph.py) | Graph copying |
 | [Word Ladder](../solutions/open-the-lock.py) | BFS shortest path |
 | [Pacific Atlantic Water Flow](../solutions/pacific-atlantic-water-flow.py) | Multi-source BFS |
+| [Alien Dictionary](../solutions/alien-dictionary.py) | Topological Sort ✅ |
+| [All Ancestors in DAG](../solutions/all-ancestors-of-a-node-in-a-directed-acyclic-graph.py) | DFS/Topo Sort ✅ |
+| [All Nodes Distance K](../solutions/all-nodes-distance-k-in-binary-tree.py) | Tree to Graph + BFS ✅ |
 
 ---
 

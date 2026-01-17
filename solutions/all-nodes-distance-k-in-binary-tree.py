@@ -1,3 +1,9 @@
+# Pattern: Graph (Tree to Graph + BFS)
+# INTUITION:
+# Convert binary tree to undirected graph (add parent edges).
+# BFS from target node for exactly K levels.
+# Return all nodes at distance K.
+
 # Time:  O(n)
 # Space: O(n)
 

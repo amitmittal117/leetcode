@@ -1,3 +1,9 @@
+# Pattern: Math / Bit Manipulation (Negabinary System)
+# INTUITION:
+# Base -2 system: carry behaves differently. When sum > 1, carry = -1.
+# Process from LSB: result[i] = sum & 1, carry = -(sum >> 1).
+# Strip leading zeros at the end.
+
 # Time:  O(n)
 # Space: O(n)
 
