@@ -1,6 +1,7 @@
 # longest-increasing-subsequence.py
 # Time:  O(nlogn)
 # Space: O(n)
+# Pattern: Dynamic Programming + Binary Search
 
 import bisect
 
@@ -11,17 +12,29 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
+        # DP INSIGHT: Maintain array where LIS[i] = smallest ending value
+        # of all increasing subsequences of length i+1
+        # This allows binary search to find where to place each number
         LIS = []
+        
         def insert(target):
+            # Find position to insert (first element >= target)
             left = bisect.bisect_left(LIS, target)
-            # If not found, append the target.
+            
+            # If target is larger than all elements, extend LIS
             if left == len(LIS):
                 LIS.append(target)
             else:
+                # Replace element at position with smaller value
+                # This keeps LIS valid while allowing longer sequences later
                 LIS[left] = target
     
+        # Process each number
         for num in nums:
             insert(num)
+        
+        # Length of LIS array = length of longest increasing subsequence
+        # Note: LIS array is NOT the actual subsequence, just tracks length
         return len(LIS)
 
 

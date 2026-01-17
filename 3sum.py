@@ -1,5 +1,6 @@
 # Time:  O(n^2)
 # Space: O(1)
+# Pattern: Two Pointers
 
 class Solution(object):
     def threeSum(self, nums):
@@ -8,26 +9,54 @@ class Solution(object):
         :rtype: List[List[int]]
         """
         result = []
+        
+        # 1. Sort the array
+        #    - Why sort? Enables two-pointer technique (need ordered data)
+        #    - Also helps skip duplicates easily (same values are adjacent)
         nums.sort()
+        
+        # 2. Fix one element and find pairs that sum to its negative
+        #    - Why iterate in reverse? Personal preference, works forward too
+        #    - Why start at index 2? Need at least 3 elements (indices 0,1,2)
         for i in reversed(xrange(2, len(nums))):
+            # 2a. Skip duplicate values for the fixed element
+            #     - Why? Avoid duplicate triplets in result
+            #     - nums[i] == nums[i+1] means we already processed this value
             if i+1 < len(nums) and nums[i] == nums[i+1]:
                 continue
+            
+            # 2b. The problem becomes: find two numbers that sum to -nums[i]
             target = -nums[i]
+            
+            # 2c. Two pointer search in the remaining (sorted) subarray
+            #     - left starts at beginning, right at position before i
             left, right = 0, i-1
+            
             while left < right:
+                # 2d. Compare current sum with target
                 if nums[left]+nums[right] < target:
+                    # Sum too small - need larger value
+                    # Why move left? Left pointer has smaller values
                     left += 1
                 elif nums[left]+nums[right] > target:
+                    # Sum too big - need smaller value
+                    # Why move right? Right pointer has larger values
                     right -= 1
                 else:
+                    # Found a valid triplet!
                     result.append([nums[left], nums[right], nums[i]])
+                    
+                    # 2e. Move both pointers and skip duplicates
+                    #     - Must skip duplicates to avoid duplicate triplets
                     left += 1
                     right -= 1
                     while left < right and nums[left] == nums[left-1]:
                         left += 1
                     while left < right and nums[right] == nums[right+1]:
                         right -= 1
+        
         return result
+
 
 
 # Time:  O(n^2)
