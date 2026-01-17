@@ -1,6 +1,13 @@
 # Time:  O(n^2)
 # Space: O(1)
 # Pattern: Two Pointers
+#
+# INTUITION:
+# Finding three numbers that sum to 0 seems like O(n³) - try all triplets.
+# But if we SORT first, we can be smarter: fix one number, then use two pointers
+# to find a pair that sums to its negative. Sorting costs O(n log n), but
+# lets us use the "squeeze" technique - if sum too small, move left pointer right;
+# if sum too big, move right pointer left. This reduces O(n³) to O(n²).
 
 class Solution(object):
     def threeSum(self, nums):

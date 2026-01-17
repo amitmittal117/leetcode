@@ -57,5 +57,20 @@ A progression-based guide to mastering algorithm patterns.
 
 ## Progress: 23 / 3056 files ✅
 
+---
+
+## Commands Reference
+
+| Command | What it does |
+|---------|--------------|
+| `Continue` | Process next batch of files (Fibonacci: 10→16→26...) |
+| `Resume from progress tracker` | Pick up where we left off after interruption |
+| `Create mind map: [Name]` + questions | Create new company/topic mind map |
+| `Add to [Name] mind map` + questions | Append to existing mind map |
+| `git push` | After reviewing staged commit |
+
+**Auto-detection:** `findstr /M "# Pattern:" *.py`
+
+
 
 

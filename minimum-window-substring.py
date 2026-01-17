@@ -1,6 +1,11 @@
 # Time:  O(n)
 # Space: O(k), k is the number of different characters
 # Pattern: Sliding Window
+#
+# INTUITION:
+# Expand window until it contains all required chars, then shrink from left
+# to find minimum. Track char counts with hashmap. "Remain" tracks how many
+# chars still needed. When remain=0, window is valid - try shrinking it.
 
 import collections
 

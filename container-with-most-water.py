@@ -1,6 +1,12 @@
 # Time:  O(n)
 # Space: O(1)
 # Pattern: Two Pointers
+#
+# INTUITION:
+# Water container = width × height (shorter wall). Start with widest possible
+# container (both ends). To find more water, we need more height since width
+# only shrinks. Moving the taller wall can't help (limited by shorter one),
+# so always move the shorter wall hoping to find a taller one.
 
 class Solution(object):
     # @return an integer

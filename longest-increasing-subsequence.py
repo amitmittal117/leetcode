@@ -2,6 +2,11 @@
 # Time:  O(nlogn)
 # Space: O(n)
 # Pattern: Dynamic Programming + Binary Search
+#
+# INTUITION:
+# Keep array of "smallest tail" for each length. For each number: binary search
+# where it fits. If bigger than all, extend LIS. Otherwise, replace to keep
+# smallest possible tails (allows longer sequences later). Array length = LIS length.
 
 import bisect
 

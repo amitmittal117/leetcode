@@ -1,6 +1,11 @@
 # Time:  O(n * 2^n)
 # Space: O(1)
 # Pattern: Backtracking (Iterative Cascading)
+#
+# INTUITION:
+# For each element: include it or not? That's 2 choices per element = 2^n subsets.
+# Iterative approach: start with [[]]. For each new number, copy all existing
+# subsets and add the number to the copies. [[], [1]] -> [[], [1], [2], [1,2]].
 
 class Solution(object):
     def subsets(self, nums):

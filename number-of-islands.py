@@ -1,6 +1,11 @@
 # Time:  O(m * n * α(m * n)) ~= O(m * n)
 # Space: O(m * n)
 # Pattern: Graph (Union-Find)
+#
+# INTUITION:
+# An island = connected land cells. Scan grid: when you find land, "flood fill"
+# it with DFS/BFS, marking visited cells as water. Each time you start a new
+# flood fill = one more island. Union-Find also works by grouping connected land.
 
 class UnionFind(object):
     def __init__(self, n):

@@ -22,6 +22,21 @@ After each batch:
 2. `git commit -m "Add structured comments to [X] files (batch N)"` - commit
 3. **User reviews** - then `git push` when ready
 
+---
+
+## Custom Mind Maps
+
+For company-specific or topic-specific question sets:
+
+**To create/add to a mind map:**
+> "Create mind map: [Name]" + list of questions  
+> "Add to [Name] mind map" + more questions
+
+**Location:** `patterns/mindmaps/[name].md`
+
+**Available:** See [mindmaps/README.md](./mindmaps/README.md)
+
+
 
 ---
 

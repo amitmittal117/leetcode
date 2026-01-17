@@ -1,6 +1,11 @@
 # Time:  O(logn)
 # Space: O(1)
 # Pattern: Binary Search
+#
+# INTUITION:
+# Array is sorted but rotated (e.g., [4,5,6,7,0,1,2]). Key insight: one half
+# is ALWAYS sorted! Find which half is sorted, check if target is in that range.
+# If yes, search there; if no, search the other half. Still O(log n).
 
 class Solution(object):
     def search(self, nums, target):

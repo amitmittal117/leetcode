@@ -1,6 +1,11 @@
 # Time:  O(n)
 # Space: O(1)
 # Pattern: Linked List
+#
+# INTUITION:
+# Reversal = changing each arrow's direction. For each node: save next, point to prev,
+# move forward. Need 3 pointers: prev (builds reversed list), curr (current node),
+# next (saved so we don't lose it). At end, prev is new head.
 
 class ListNode(object):
     def __init__(self, x):

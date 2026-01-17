@@ -1,6 +1,11 @@
 # Time:  O(n)
 # Space: O(n)
 # Pattern: Stack
+#
+# INTUITION:
+# Brackets must match in LIFO order: most recent open must close first.
+# Stack is perfect! Push opening brackets, pop when closing. If pop doesn't match
+# or stack empty when closing, invalid. At end, stack must be empty.
 
 class Solution(object):
     # @return a boolean

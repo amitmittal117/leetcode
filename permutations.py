@@ -1,6 +1,11 @@
 # Time:  O(n * n!)
 # Space: O(n)
 # Pattern: Backtracking
+#
+# INTUITION:
+# Build permutation slot by slot. For each slot, try each unused number.
+# Recursively fill remaining slots. When all slots filled, record the permutation.
+# Backtrack: undo choice so other branches can try different options.
 
 class Solution(object):
     # @param num, a list of integer

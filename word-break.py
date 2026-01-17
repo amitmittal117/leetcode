@@ -1,6 +1,11 @@
 # Time:  O(n * l^2)
 # Space: O(n)
 # Pattern: Dynamic Programming
+#
+# INTUITION:
+# Can we segment string into dictionary words? Ask for each position: "can I reach here?"
+# Position i is reachable if some earlier position j is reachable AND s[j:i] is a word.
+# Build from start: if position i is reachable, position i+len(word) is too.
 
 class Solution(object):
     def wordBreak(self, s, wordDict):

@@ -1,6 +1,11 @@
 # Time:  O(k * n^k)
 # Space: O(k)
 # Pattern: Backtracking
+#
+# INTUITION:
+# Build combinations that sum to target. Try each candidate, subtract from target,
+# recurse. If target hits 0, found a valid combination! Unlike permutations, we can
+# reuse same number (pass same index), and we start from current index to avoid duplicates.
 
 class Solution(object):
     # @param candidates, a list of integers

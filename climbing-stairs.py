@@ -1,6 +1,11 @@
 # Time:  O(logn)
 # Space: O(1)
 # Pattern: Dynamic Programming (Matrix Exponentiation - Advanced)
+#
+# INTUITION:
+# To reach step N, you either came from step N-1 (took 1 step) or N-2 (took 2).
+# So ways(N) = ways(N-1) + ways(N-2). This is just Fibonacci!
+# Base: ways(1)=1, ways(2)=2. We only need last 2 values, so O(1) space.
 
 import itertools
 

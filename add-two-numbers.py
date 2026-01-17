@@ -1,6 +1,12 @@
 # Time:  O(n)
 # Space: O(1)
 # Pattern: Linked List
+#
+# INTUITION:
+# Just like adding numbers on paper! Start from rightmost digit (head of list),
+# add digits + carry, keep the ones place, carry the tens. The dummy node trick
+# avoids special handling for the first node. Process until both lists AND
+# carry are exhausted.
 
 class ListNode(object):
     def __init__(self, x):

@@ -1,6 +1,12 @@
 # Time:  O(logn)
 # Space: O(1)
 # Pattern: Binary Search
+#
+# INTUITION:
+# Imagine looking for a word in a dictionary. You don't start from page 1 -
+# you open to the middle, see if your word comes before or after, then repeat.
+# Each time you eliminate HALF the remaining pages. That's binary search!
+# Key insight: sorted data lets us make informed decisions about where to look.
 
 class Solution(object):
     def search(self, nums, target):

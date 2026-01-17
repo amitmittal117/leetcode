@@ -1,6 +1,11 @@
 # Time:  O(n)
 # Space: O(1)
 # Pattern: Linked List
+#
+# INTUITION:
+# Like merging two sorted piles of cards. Compare top cards, take the smaller one.
+# Repeat until one pile is empty, then take the rest. Dummy node avoids special
+# handling for the first element.
 
 class ListNode(object):
     def __init__(self, x):

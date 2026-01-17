@@ -1,6 +1,11 @@
 # Time:  O(n)
 # Space: O(n)
 # Pattern: Stack (Monotonic Stack)
+#
+# INTUITION:
+# For each day, we want "next warmer day". Brute force: for each day, look ahead.
+# Monotonic stack trick: keep indices of unresolved (no warmer yet) days in stack.
+# When we find a warmer day, pop all colder days from stack and record the answer.
 
 class Solution(object):
     def dailyTemperatures(self, temperatures):

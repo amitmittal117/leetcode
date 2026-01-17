@@ -1,6 +1,11 @@
 # Time:  O(n)
 # Space: O(1)
 # Pattern: Dynamic Programming
+#
+# INTUITION:
+# At each house: rob it (get money + best from 2 houses ago) or skip it (keep best so far).
+# Can't rob adjacent houses, so if you rob house i, previous must be i-2 or earlier.
+# Only need to track last two values, not entire array.
 
 class Solution(object):
     # @param num, a list of integer

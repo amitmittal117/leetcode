@@ -1,6 +1,11 @@
 # Time:  O(n * k), n is the number of coins, k is the amount of money
 # Space: O(k)
 # Pattern: Dynamic Programming (Bottom-up, Unbounded Knapsack variant)
+#
+# INTUITION:
+# For each amount from 0 to target, ask: "what's the minimum coins to make this?"
+# For amount X, try each coin: if I use this coin, I need 1 + dp[X-coin].
+# Build up from amount 0 (needs 0 coins) to target. Unreachable amounts stay ∞.
 
 class Solution(object):
     def coinChange(self, coins, amount):

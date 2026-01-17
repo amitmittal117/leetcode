@@ -1,6 +1,11 @@
 # Time:  O(n)
 # Space: O(1)
 # Pattern: Two Pointers
+#
+# INTUITION:
+# Water at any spot = min(max_left, max_right) - height. With two pointers from
+# both ends, we always process the shorter side. Why? The shorter side determines
+# water level. Track max height seen from each side as we go inward.
 
 class Solution(object):
     def trap(self, height):

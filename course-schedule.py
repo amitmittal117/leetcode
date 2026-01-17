@@ -2,6 +2,11 @@
 # Time:  O(|V| + |E|)
 # Space: O(|E|)
 # Pattern: Graph (Topological Sort / Kahn's Algorithm)
+#
+# INTUITION:
+# Prerequisites form a graph. Cycle = impossible to finish (chicken & egg).
+# Topological sort: take courses with no prerequisites first, then unlock
+# dependent courses. If we can process all courses, no cycle exists.
 
 import collections
 

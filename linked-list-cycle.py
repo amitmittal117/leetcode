@@ -1,6 +1,11 @@
 # Time:  O(n)
 # Space: O(1)
 # Pattern: Linked List (Fast/Slow Pointers)
+#
+# INTUITION:
+# Imagine two runners on a circular track. Fast runner (2 steps) will lap slow
+# runner (1 step) if there's a loop. If no loop, fast hits the end.
+# This is Floyd's Tortoise and Hare - O(1) space cycle detection!
 
 class ListNode(object):
     def __init__(self, x):

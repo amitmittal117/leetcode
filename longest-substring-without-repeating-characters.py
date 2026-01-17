@@ -1,6 +1,12 @@
 # Time:  O(n)
 # Space: O(1)
 # Pattern: Sliding Window
+#
+# INTUITION:
+# Think of a "window" sliding over the string. We expand it by adding chars
+# on the right. When we hit a duplicate, we shrink from the left until valid.
+# The trick: use a hashmap to store each char's last position, so we can
+# "jump" the left pointer past the duplicate instead of shrinking one by one.
 
 class Solution(object):
     def lengthOfLongestSubstring(self, s):
