@@ -1,5 +1,11 @@
 # Time:  O(n)
 # Space: O(1)
+# Pattern: Three Pointers (Dutch National Flag)
+#
+# INTUITION:
+# Sort 0s, 1s, 2s in one pass without counting. Three pointers: left (0s boundary),
+# right (2s boundary), current. If 0: swap to left. If 2: swap to right.
+# If 1: just move on. Classic Dijkstra's Dutch National Flag algorithm.
 
 class Solution(object):
     def sortColors(self, nums):

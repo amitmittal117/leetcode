@@ -1,5 +1,11 @@
 # Time:  O(n)
 # Space: O(1)
+# Pattern: Dynamic Programming
+#
+# INTUITION:
+# Like climbing stairs! At position i: can decode as single digit (if valid),
+# or as two-digit with previous (if 10-26). dp[i] = dp[i-1] + dp[i-2] when valid.
+# Handle '0' specially - it can't be decoded alone, only as 10 or 20.
 
 class Solution(object):
     def numDecodings(self, s):

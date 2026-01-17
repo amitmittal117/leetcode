@@ -1,5 +1,10 @@
 # Time:  O(n)
 # Space: O(1)
+# Pattern: Two Pointers
+#
+# INTUITION:
+# Two pointers at both ends, swap and move inward until they meet.
+# Simple and elegant O(n) time, O(1) space in-place reversal.
 
 class Solution(object):
     def reverseString(self, s):

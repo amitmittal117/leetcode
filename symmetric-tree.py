@@ -1,5 +1,12 @@
 # Time:  O(n)
 # Space: O(h), h is height of binary tree
+# Pattern: Tree (Recursion / Stack)
+#
+# INTUITION:
+# Symmetric = left subtree mirrors right subtree. Compare nodes in pairs:
+# left.val == right.val, AND left.left mirrors right.right, AND left.right mirrors right.left.
+# Recursive or iterative with stack/queue both work.
+
 # Given a binary tree, check whether it is a mirror of itself (ie, symmetric around its center).
 
 class TreeNode(object):

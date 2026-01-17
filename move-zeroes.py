@@ -1,5 +1,11 @@
 # Time:  O(n)
 # Space: O(1)
+# Pattern: Two Pointers (In-Place Partitioning)
+#
+# INTUITION:
+# Two pointers: 'pos' tracks where next non-zero should go, 'i' scans array.
+# When i finds non-zero, swap with pos and advance both. All zeroes naturally
+# end up at the end. One pass, in-place, stable for non-zero ordering.
 
 class Solution(object):
     def moveZeroes(self, nums):

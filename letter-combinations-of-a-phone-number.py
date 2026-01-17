@@ -1,5 +1,11 @@
 # Time:  O(n * 4^n)
 # Space: O(1)
+# Pattern: Backtracking / Cartesian Product
+#
+# INTUITION:
+# Each digit maps to letters. We need all combinations = Cartesian product.
+# Backtracking: for each digit, try each letter, recurse to next digit.
+# Iterative: build combinations by extending each existing combo with new letters.
 
 # iterative solution
 class Solution(object):

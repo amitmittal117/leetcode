@@ -1,8 +1,13 @@
 # Time:  O(n)
 # Space: O(h)
+# Pattern: Tree (DFS/BFS)
+#
+# INTUITION:
+# Mirror image = swap left and right children at every node.
+# Can do BFS (level by level) or DFS (recursive). At each node, just swap!
+# Recursive: invert(root) = swap(invert(left), invert(right)).
 
 import collections
-
 
 # BFS solution.
 class Queue(object):

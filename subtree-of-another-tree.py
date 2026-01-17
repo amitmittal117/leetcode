@@ -1,5 +1,10 @@
 # Time:  O(m * n), m is the number of nodes of s, n is the number of nodes of t
 # Space: O(h), h is the height of s
+# Pattern: Tree (Recursion)
+#
+# INTUITION:
+# Check if t is subtree of s. At each node of s, check if subtrees match.
+# isSame(x,y): are trees identical? Then traverse s checking isSame at each node.
 
 class Solution(object):
     def isSubtree(self, s, t):

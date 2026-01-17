@@ -1,5 +1,11 @@
 # Time:  O(m + n)
 # Space: O(m + n)
+# Pattern: Stack (Monotonic Stack)
+#
+# INTUITION:
+# For each element, find next greater to the right. Monotonic stack: process
+# elements, pop smaller ones (they found their next greater), push current.
+# Store results in hashmap for O(1) lookup.
 
 class Solution(object):
     def nextGreaterElement(self, findNums, nums):

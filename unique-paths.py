@@ -1,5 +1,11 @@
 # Time:  O(m + n)
 # Space: O(1)
+# Pattern: Dynamic Programming / Math (Combinatorics)
+#
+# INTUITION:
+# Total moves = (m-1) down + (n-1) right. Choose which moves are "right".
+# Answer = C(m+n-2, n-1) = combinatorics! DP version: dp[i][j] = dp[i-1][j] + dp[i][j-1].
+# Can optimize to O(min(m,n)) space with 1D array.
 
 class Solution(object):
     def uniquePaths(self, m, n):

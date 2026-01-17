@@ -1,6 +1,13 @@
 # If the given array is not sorted and the memory is unlimited:
 #   - Time:  O(m + n)
 #   - Space: O(min(m, n))
+# Pattern: Hash Map / Two Pointers
+#
+# INTUITION:
+# Count occurrences in smaller array. Scan larger array, if element exists in
+# count and count > 0, add to result and decrement. If sorted: two pointers.
+# Multiple approaches for different constraints (sorted/unsorted, memory limited).
+
 # elif the given array is already sorted:
 #   if m << n or m >> n:
 #     - Time:  O(min(m, n) * log(max(m, n)))

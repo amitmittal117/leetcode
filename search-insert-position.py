@@ -1,5 +1,11 @@
 # Time:  O(logn)
 # Space: O(1)
+# Pattern: Binary Search
+#
+# INTUITION:
+# Find index where target would be inserted to keep array sorted.
+# Binary search: find leftmost position where nums[i] >= target.
+# If found, return index. If not, left pointer ends at insert position.
 
 class Solution(object):
     def searchInsert(self, nums, target):

@@ -1,5 +1,10 @@
 # Time:  O(n)
 # Space: O(1)
+# Pattern: Simulation / String Building
+#
+# INTUITION:
+# Classic interview problem. Check divisibility: 15 first (FizzBuzz), then 5, then 3.
+# Order matters! Alternative: build string incrementally with Fizz + Buzz.
 
 class Solution(object):
     def fizzBuzz(self, n):

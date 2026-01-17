@@ -1,5 +1,11 @@
 # Time : O(32)
 # Space: O(1)
+# Pattern: Bit Manipulation
+#
+# INTUITION:
+# Reverse 32-bit integer: swap halves, then quarters, eighths, etc. (divide & conquer).
+# Or simple loop: extract rightmost bit of n, shift into result from left.
+# Both O(32) = O(1). First method uses clever bitmasks for parallel swaps.
 
 class Solution(object):
     # @param n, an integer

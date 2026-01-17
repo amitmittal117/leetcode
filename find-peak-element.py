@@ -1,5 +1,11 @@
 # Time:  O(logn)
 # Space: O(1)
+# Pattern: Binary Search
+#
+# INTUITION:
+# A peak exists - array rises then falls (or vice versa). Binary search!
+# If mid < mid+1, we're on rising slope - peak is to the right.
+# If mid > mid+1, we're on falling slope - peak is at mid or left.
 
 class Solution(object):
     def findPeakElement(self, nums):

@@ -1,6 +1,12 @@
 # generate-parentheses.py
 # Time:  O(4^n / n^(3/2)) ~= Catalan numbers
 # Space: O(n)
+# Pattern: Backtracking
+#
+# INTUITION:
+# Generate valid parentheses = balanced pairs. Track open/close count.
+# Can add '(' if open < n. Can add ')' if close < open (ensures balance).
+# Backtracking explores all valid combinations. Count = Catalan number.
 
 # iterative solution
 class Solution(object):

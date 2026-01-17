@@ -1,8 +1,13 @@
 # Time:  O(n) on average, using Median of Medians could achieve O(n) (Intro Select)
 # Space: O(1)
+# Pattern: QuickSelect (Partitioning)
+#
+# INTUITION:
+# Don't need full sort! QuickSelect: partition around pivot, kth largest ends up
+# at correct position. If pivot position = k-1, done! Otherwise search correct half.
+# Average O(n) because we discard half each time. Randomized pivot avoids worst case.
 
 from random import randint
-
 
 # optimized for duplicated nums
 class Solution(object):

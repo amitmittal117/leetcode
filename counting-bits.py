@@ -1,5 +1,11 @@
 # Time:  O(n)
 # Space: O(n)
+# Pattern: Dynamic Programming / Bit Manipulation
+#
+# INTUITION:
+# Count of 1s in i = count in (i >> 1) + last bit (i & 1).
+# Right shift removes last bit, which we already computed! Build up from 0.
+# DP relation: bits[i] = bits[i >> 1] + (i & 1).
 
 class Solution(object):
     def countBits(self, num):

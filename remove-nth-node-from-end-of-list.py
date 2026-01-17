@@ -1,5 +1,11 @@
 # Time:  O(n)
 # Space: O(1)
+# Pattern: Linked List (Two Pointers - Fast/Slow with Gap)
+#
+# INTUITION:
+# Move fast pointer n steps ahead, then move both together.
+# When fast hits end, slow is at the (n+1)th from end - just before target!
+# Dummy node handles edge case of removing the head.
 
 class ListNode(object):
     def __init__(self, x):

@@ -1,8 +1,12 @@
 # Time:  O(n)
 # Space: O(1)
+# Pattern: Hash Map (Character Counting)
+#
+# INTUITION:
+# Anagrams have same characters with same frequencies. Count chars in first string,
+# decrement for second. If any count goes negative or lengths differ, not anagram.
 
 import collections
-
 
 class Solution(object):
     def isAnagram(self, s, t):
