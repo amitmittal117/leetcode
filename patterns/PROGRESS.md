@@ -11,7 +11,7 @@ Files with `# Pattern:` tag = processed.
 findstr /M "# Pattern:" *.py    # Windows
 ```
 
-**Current count: 23 / 3056 files processed**
+**Current count: 39 / 3056 files processed**
 
 ---
 
@@ -34,64 +34,39 @@ For company-specific or topic-specific question sets:
 
 **Location:** `patterns/mindmaps/[name].md`
 
-**Available:** See [mindmaps/README.md](./mindmaps/README.md)
-
-
-
 ---
 
 ## Completed Files ✅
 
-| File | Pattern |
-|------|---------|
-| binary-search.py | Binary Search |
-| search-in-rotated-sorted-array.py | Binary Search |
-| 3sum.py | Two Pointers |
-| container-with-most-water.py | Two Pointers |
-| trapping-rain-water.py | Two Pointers |
-| longest-substring-without-repeating-characters.py | Sliding Window |
-| minimum-window-substring.py | Sliding Window |
-| add-two-numbers.py | Linked List |
-| reverse-linked-list.py | Linked List |
-| merge-two-sorted-lists.py | Linked List |
-| linked-list-cycle.py | Linked List |
-| valid-parentheses.py | Stack |
-| daily-temperatures.py | Stack (Monotonic) |
-| number-of-islands.py | Graph/DFS |
-| course-schedule.py | Graph (Topological Sort) |
-| climbing-stairs.py | DP |
-| coin-change.py | DP |
-| house-robber.py | DP |
-| longest-increasing-subsequence.py | DP + Binary Search |
-| word-break.py | DP |
-| permutations.py | Backtracking |
-| subsets.py | Backtracking |
-| combination-sum.py | Backtracking |
+| Batch | Files Added |
+|-------|-------------|
+| 1-2 (23) | binary-search, 3sum, container-with-most-water, longest-substring, add-two-numbers, reverse-linked-list, merge-two-sorted-lists, linked-list-cycle, valid-parentheses, daily-temperatures, number-of-islands, course-schedule, climbing-stairs, coin-change, house-robber, longest-increasing-subsequence, word-break, search-in-rotated, trapping-rain-water, subsets, permutations, combination-sum, minimum-window-substring |
+| 3 (16) | two-sum, best-time-to-buy-and-sell-stock, edit-distance, jump-game, product-of-array-except-self, rotate-image, group-anagrams, merge-intervals, median-of-two-sorted-arrays, find-minimum-in-rotated, spiral-matrix, set-matrix-zeroes, palindrome-linked-list, lru-cache, validate-binary-search-tree, longest-palindromic-substring |
 
 ---
 
-## Patterns Covered (9 total)
+## Patterns Covered
 
 | Pattern | Count |
 |---------|-------|
-| Binary Search | 2 |
+| Binary Search | 4 |
 | Two Pointers | 3 |
 | Sliding Window | 2 |
-| Linked List | 4 |
+| Linked List | 6 |
 | Stack | 2 |
 | Graph | 2 |
-| DP | 5 |
+| DP | 7 |
 | Backtracking | 3 |
+| Hash Map | 3 |
+| Greedy | 3 |
+| Matrix | 4 |
+| Intervals | 1 |
+| Tree | 1 |
+| String | 1 |
+| Design | 1 |
 
 ---
 
-## Batch Processing
+## Next Batch (Fibonacci: 26 files)
 
-- **Batch 1 (10):** ✅ Complete
-- **Batch 2 (10):** 8/10 done (next: 2 more, then batch 3 of 16 per Fibonacci)
-
-## Next in Queue
-
-- [ ] edit-distance.py (DP)
-- [ ] jump-game.py (Greedy) 
-- [ ] best-time-to-buy-and-sell-stock.py (DP/Greedy)
+Upcoming files from queue...

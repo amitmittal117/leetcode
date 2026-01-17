@@ -1,6 +1,12 @@
 from functools import reduce
 # Time:  O(m * n)
 # Space: O(1)
+# Pattern: Matrix In-Place Marking
+#
+# INTUITION:
+# Use first row and first column as "flags" to mark which rows/cols need zeroing.
+# Save original first row/col state separately. Mark, then zero based on marks,
+# finally handle first row/col. Clever space optimization: O(1) instead of O(m+n).
 
 class Solution(object):
     # @param matrix, a list of lists of integers

@@ -1,5 +1,11 @@
 # Time:  O(1), per operation.
 # Space: O(k), k is the capacity of cache.
+# Pattern: Hash Map + Doubly Linked List (Design)
+#
+# INTUITION:
+# Need O(1) get AND O(1) eviction. HashMap gives O(1) lookup, but how to track
+# "least recently used"? Doubly linked list: most recent at tail, LRU at head.
+# On access, move to tail. On eviction, remove head. OrderedDict does this for us!
 
 import collections
 

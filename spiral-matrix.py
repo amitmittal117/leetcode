@@ -1,5 +1,11 @@
 # Time:  O(m * n)
 # Space: O(1)
+# Pattern: Matrix Traversal
+#
+# INTUITION:
+# Peel the matrix layer by layer like an onion. Each layer = one rectangular loop:
+# right → down → left → up. Track boundaries (left, right, top, bottom), shrink
+# inward after each complete loop. Handle edge cases when only row or column left.
 
 class Solution(object):
     # @param matrix, a list of lists of integers

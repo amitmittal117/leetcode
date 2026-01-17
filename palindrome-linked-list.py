@@ -1,5 +1,11 @@
 # Time:  O(n)
 # Space: O(1)
+# Pattern: Linked List (Fast/Slow + Reversal)
+#
+# INTUITION:
+# To check palindrome: compare first half with reversed second half. Use fast/slow
+# to find middle, reverse first half while finding middle, then compare.
+# Bonus: restore list by reversing again during comparison. O(1) space!
 
 class Solution(object):
     # @param {ListNode} head

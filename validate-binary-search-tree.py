@@ -1,5 +1,11 @@
 # Time:  O(n)
 # Space: O(1)
+# Pattern: Tree (DFS with Range Validation)
+#
+# INTUITION:
+# BST property: left < root < right, but must hold for ENTIRE subtree, not just
+# children. Pass valid range (low, high) down. Each node must be within range.
+# Left subtree: new high = root.val. Right subtree: new low = root.val.
 
 class TreeNode(object):
     def __init__(self, x):

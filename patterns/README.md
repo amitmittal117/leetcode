@@ -55,7 +55,8 @@ A progression-based guide to mastering algorithm patterns.
 
 ---
 
-## Progress: 23 / 3056 files ✅
+## Progress: 39 / 3056 files ✅
+
 
 ---
 

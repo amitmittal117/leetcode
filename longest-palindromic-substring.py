@@ -1,5 +1,11 @@
 # Time:  O(n)
 # Space: O(n)
+# Pattern: String (Manacher's Algorithm / Expand Around Center)
+#
+# INTUITION:
+# Simple approach: expand from each center (O(n²)). Manacher's O(n) trick: reuse
+# previous palindrome info. If we're inside a known palindrome, mirror position
+# gives starting point. Two solutions here: O(n) Manacher and O(n²) expand.
 
 class Solution(object):
     def longestPalindrome(self, s):

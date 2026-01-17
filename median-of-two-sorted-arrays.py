@@ -1,5 +1,11 @@
 # Time:  O(log(min(m, n)))
 # Space: O(1)
+# Pattern: Binary Search (Advanced)
+#
+# INTUITION:
+# Median = middle element after merging. Instead of merging (O(n+m)), binary
+# search on smaller array to find partition point where left half of both
+# arrays equals right half. At correct partition, max(left) <= min(right).
 
 class Solution(object):
     def findMedianSortedArrays(self, nums1, nums2):
