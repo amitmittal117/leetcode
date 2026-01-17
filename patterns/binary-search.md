@@ -63,7 +63,13 @@ return left if nums[left] == target else -1
 
 | Problem | Difficulty | Key Insight |
 |---------|------------|-------------|
-| [binary-search.py](file:///c:/Users/amit/Desktop/projects/LeetProject/leetcode/binary-search.py) | Easy | Classic template ✅ |
+| [binary-search](../solutions/binary-search.py) | Easy | Classic template ✅ |
+| [search-insert-position](../solutions/search-insert-position.py) | Easy | Find insertion point ✅ |
+| [first-bad-version](../solutions/first-bad-version.py) | Easy | First occurrence ✅ |
+| [find-peak-element](../solutions/find-peak-element.py) | Medium | Move toward higher neighbor ✅ |
+| [search-in-rotated-sorted-array](../solutions/search-in-rotated-sorted-array.py) | Medium | Find sorted half ✅ |
+| [find-minimum-in-rotated](../solutions/find-minimum-in-rotated-sorted-array.py) | Medium | Compare with right ✅ |
+| [sqrtx](../solutions/sqrtx.py) | Easy | Binary search on answer ✅ |
 
 ---
 

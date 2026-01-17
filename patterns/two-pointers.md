@@ -92,7 +92,13 @@ def has_cycle(head):
 
 | Problem | Difficulty | Key Insight |
 |---------|------------|-------------|
-| [3sum.py](file:///c:/Users/amit/Desktop/projects/LeetProject/leetcode/3sum.py) | Medium | Fix + two pointers ✅ |
+| [3sum](../solutions/3sum.py) | Medium | Fix + two pointers ✅ |
+| [3sum-closest](../solutions/3sum-closest.py) | Medium | Track closest sum ✅ |
+| [3sum-smaller](../solutions/3sum-smaller.py) | Medium | Count pairs < target ✅ |
+| [container-with-most-water](../solutions/container-with-most-water.py) | Medium | Move shorter pointer ✅ |
+| [two-sum-ii](../solutions/two-sum-ii-input-array-is-sorted.py) | Medium | Classic sorted two-sum ✅ |
+| [move-zeroes](../solutions/move-zeroes.py) | Easy | Fast/slow pointer ✅ |
+| [remove-duplicates](../solutions/remove-duplicates-from-sorted-array.py) | Easy | Unique pointer ✅ |
 
 ---
 

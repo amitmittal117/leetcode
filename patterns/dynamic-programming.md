@@ -91,8 +91,16 @@ def solve(n):
 
 | Problem | Difficulty | Key Insight |
 |---------|------------|-------------|
-| [climbing-stairs.py](file:///c:/Users/amit/Desktop/projects/LeetProject/leetcode/climbing-stairs.py) | Easy | Fibonacci pattern ✅ |
-| [coin-change.py](file:///c:/Users/amit/Desktop/projects/LeetProject/leetcode/coin-change.py) | Medium | Unbounded knapsack ✅ |
+| [climbing-stairs](../solutions/climbing-stairs.py) | Easy | Fibonacci pattern ✅ |
+| [coin-change](../solutions/coin-change.py) | Medium | Unbounded knapsack ✅ |
+| [house-robber](../solutions/house-robber.py) | Medium | Include/exclude decision ✅ |
+| [longest-increasing-subsequence](../solutions/longest-increasing-subsequence.py) | Medium | 1D DP + binary search ✅ |
+| [edit-distance](../solutions/edit-distance.py) | Medium | 2D string DP ✅ |
+| [unique-paths](../solutions/unique-paths.py) | Medium | Grid DP / Math ✅ |
+| [decode-ways](../solutions/decode-ways.py) | Medium | String parsing DP ✅ |
+| [word-break](../solutions/word-break.py) | Medium | Prefix matching DP ✅ |
+| [2-keys-keyboard](../solutions/2-keys-keyboard.py) | Medium | Prime factorization ✅ |
+| [4-keys-keyboard](../solutions/4-keys-keyboard.py) | Medium | Optimal copy-paste ✅ |
 
 ---
 

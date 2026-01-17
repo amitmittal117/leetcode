@@ -74,7 +74,10 @@ Why `max()`? The stored position might be before current left (already outside w
 
 | Problem | Difficulty | Key Insight |
 |---------|------------|-------------|
-| [longest-substring-without-repeating-characters.py](file:///c:/Users/amit/Desktop/projects/LeetProject/leetcode/longest-substring-without-repeating-characters.py) | Medium | HashMap + max() trick ✅ |
+| [longest-substring-without-repeating](../solutions/longest-substring-without-repeating-characters.py) | Medium | HashMap + max() trick ✅ |
+| [minimum-window-substring](../solutions/minimum-window-substring.py) | Hard | Counter + valid check ✅ |
+| [find-all-anagrams-in-string](../solutions/find-all-anagrams-in-a-string.py) | Medium | Fixed window, char count ✅ |
+| [longest-repeating-character-replacement](../solutions/longest-repeating-character-replacement.py) | Medium | Max count in window ✅ |
 
 ---
 

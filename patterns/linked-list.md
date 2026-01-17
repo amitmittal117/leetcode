@@ -89,7 +89,15 @@ def find_middle(head):
 
 | Problem | Difficulty | Key Insight |
 |---------|------------|-------------|
-| [add-two-numbers.py](file:///c:/Users/amit/Desktop/projects/LeetProject/leetcode/add-two-numbers.py) | Medium | Dummy + carry ✅ |
+| [add-two-numbers](../solutions/add-two-numbers.py) | Medium | Dummy + carry ✅ |
+| [reverse-linked-list](../solutions/reverse-linked-list.py) | Easy | Three pointers ✅ |
+| [merge-two-sorted-lists](../solutions/merge-two-sorted-lists.py) | Easy | Dummy + compare ✅ |
+| [linked-list-cycle](../solutions/linked-list-cycle.py) | Easy | Fast/slow detection ✅ |
+| [palindrome-linked-list](../solutions/palindrome-linked-list.py) | Easy | Reverse second half ✅ |
+| [remove-nth-node-from-end](../solutions/remove-nth-node-from-end-of-list.py) | Medium | Two pointers with gap ✅ |
+| [reorder-list](../solutions/reorder-list.py) | Medium | Find mid + reverse + merge ✅ |
+| [copy-list-with-random-pointer](../solutions/copy-list-with-random-pointer.py) | Medium | Interweaving or hash map ✅ |
+| [add-strings](../solutions/add-strings.py) | Easy | Carry propagation ✅ |
 
 ---
 
