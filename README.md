@@ -9,19 +9,24 @@ A progression-based guide to mastering algorithm patterns through [LeetCode](htt
 
 ## Pattern Progression
 
+> 📚 **[View Full Learning Roadmap →](./patterns/PROGRESSION.md)**
+
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │                    LEARNING PATH                            │
 ├─────────────────────────────────────────────────────────────┤
 │                                                             │
-│  1. Binary Search ──► 2. Two Pointers ──► 3. Sliding Window │
+│  TIER 1: Hash Map → Two Pointers → Binary Search            │
 │                                                             │
-│  4. Linked List ──► 5. Stack/Queue ──► 6. DFS/BFS           │
-│                              │              │               │
-│                              ▼              ├──► 8. Backtrack│
-│                         7. DP               │               │
-│                                             ▼               │
-│                         9. Greedy      10. Graph            │
+│  TIER 2: Sliding Window → Stack → Monotonic Stack           │
+│                                                             │
+│  TIER 3: Tree DFS/BFS → Backtracking                        │
+│                                                             │
+│  TIER 4: Graph DFS/BFS → Topological Sort → Union-Find      │
+│                                                             │
+│  TIER 5: 1D DP → 2D DP → Grid DP → Interval DP              │
+│                                                             │
+│  TIER 6: Trie → Greedy → Heap → Bit Manipulation            │
 │                                                             │
 └─────────────────────────────────────────────────────────────┘
 ```
