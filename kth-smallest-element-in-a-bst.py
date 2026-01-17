@@ -1,5 +1,10 @@
 # Time:  O(max(h, k))
 # Space: O(h)
+# Pattern: Tree (Inorder Traversal)
+#
+# INTUITION:
+# BST inorder traversal gives sorted order. Do inorder, count to k, return.
+# Can stop early once k nodes visited. Iterative with stack or recursive.
 
 class Solution(object):
     # @param {TreeNode} root

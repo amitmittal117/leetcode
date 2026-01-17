@@ -1,5 +1,10 @@
 # Time:  O(logn)
 # Space: O(1)
+# Pattern: Binary Search
+#
+# INTUITION:
+# Find largest m where m*m <= x. Binary search on answer space [1, x/2].
+# If mid*mid > x, search left. Else search right. Use mid > x/mid to avoid overflow.
 
 class Solution(object):
     def mySqrt(self, x):

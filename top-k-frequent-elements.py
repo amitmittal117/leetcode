@@ -1,8 +1,12 @@
 # Time:  O(n)
 # Space: O(n)
+# Pattern: Bucket Sort / Heap / QuickSelect
+#
+# INTUITION:
+# Count frequencies, then find top k. Bucket sort: O(n) - index = frequency.
+# Heap: O(n log k). QuickSelect: O(n) average. Bucket sort is most elegant here.
 
 import collections
-
 
 class Solution(object):
     def topKFrequent(self, nums, k):

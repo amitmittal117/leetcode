@@ -1,5 +1,11 @@
 # Time:  O(n^2 * n!)
 # Space: O(n)
+# Pattern: Backtracking
+#
+# INTUITION:
+# Place queens row by row. For each row, try each column. Check if safe:
+# no queen in same column, or diagonals. Track used columns and diagonals.
+# Diagonal trick: main diag has constant row-col, anti-diag has constant row+col.
 
 class Solution(object):
     def solveNQueens(self, n):

@@ -1,5 +1,10 @@
 # Time:  O(n * k), k is the length of the common prefix
 # Space: O(1)
+# Pattern: String (Vertical Scanning)
+#
+# INTUITION:
+# Compare characters column by column across all strings. Stop when mismatch
+# or string ends. Alternatively, use first string as reference, shrink on mismatch.
 
 class Solution(object):
     def longestCommonPrefix(self, strs):

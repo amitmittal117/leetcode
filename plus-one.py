@@ -1,5 +1,10 @@
 # Time:  O(n)
 # Space: O(1)
+# Pattern: Math (Carry Propagation)
+#
+# INTUITION:
+# Add 1 from right, propagate carry. If digit is 9, set to 0 and continue.
+# Otherwise, increment and done. If all 9s, we need extra digit at front.
 
 class Solution(object):
     def plusOne(self, digits):

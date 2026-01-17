@@ -1,5 +1,10 @@
 # Time:  O(n)
 # Space: O(n)
+# Pattern: Tree (BFS Level Order)
+#
+# INTUITION:
+# Process tree level by level using queue. For each level, collect all nodes,
+# then process their children for next level. Result is list of lists.
 
 class TreeNode(object):
     def __init__(self, x):

@@ -1,5 +1,10 @@
 # Time:  O(n)
 # Space: O(1)
+# Pattern: Design (Stack with Min Tracking)
+#
+# INTUITION:
+# Track min alongside stack. Option 1: store (val, min_so_far) pairs.
+# Option 2: store deltas from min, recover on pop. getMin in O(1)!
 
 class MinStack(object):
     def __init__(self):

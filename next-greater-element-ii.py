@@ -1,5 +1,10 @@
 # Time:  O(n)
 # Space: O(n)
+# Pattern: Stack (Monotonic Stack - Circular)
+#
+# INTUITION:
+# Like next-greater-element-i, but array is circular. Trick: iterate 2x array
+# using modulo to wrap around. Process from right, stack holds potential answers.
 
 class Solution(object):
     def nextGreaterElements(self, nums):

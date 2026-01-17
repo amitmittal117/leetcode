@@ -1,5 +1,10 @@
 # Time:  O(n)
 # Space: O(1)
+# Pattern: String Parsing
+#
+# INTUITION:
+# Parse carefully: skip whitespace, check sign, convert digits, handle overflow.
+# Key: check overflow BEFORE multiplying to avoid actual overflow.
 
 class Solution(object):
     def myAtoi(self, str):

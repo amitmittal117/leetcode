@@ -1,5 +1,11 @@
 # Time:  O(1), amortized
 # Space: O(n)
+# Pattern: Design (Two Stacks)
+#
+# INTUITION:
+# Queue = FIFO, Stack = LIFO. Use two stacks: input and output.
+# Push to input. Pop from output. When output empty, pour input into output
+# (reverses order, giving FIFO). Amortized O(1) - each element moves twice.
 
 class MyQueue(object):
 

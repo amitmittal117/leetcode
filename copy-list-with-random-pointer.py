@@ -1,5 +1,11 @@
 # Time:  O(n)
 # Space: O(1)
+# Pattern: Linked List (Interweaving / Hash Map)
+#
+# INTUITION:
+# Copy list where random can point anywhere. O(1) space trick: interweave copies
+# (A->A'->B->B'...). Now random' = random.next. Then separate lists.
+# Or use hash map: old_node -> copied_node mapping in two passes.
 
 class Node(object):
     def __init__(self, x):

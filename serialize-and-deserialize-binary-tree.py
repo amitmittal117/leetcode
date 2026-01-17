@@ -1,5 +1,11 @@
 # Time:  O(n)
 # Space: O(h)
+# Pattern: Tree (DFS Serialization)
+#
+# INTUITION:
+# Convert tree to string and back. Preorder traversal with null markers (#).
+# Serialize: DFS, output val or #. Deserialize: read val, recursively build
+# left then right. # means null node. Iterator consumes tokens in order.
 
 class TreeNode(object):
     def __init__(self, x):

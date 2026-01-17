@@ -1,8 +1,12 @@
 # Time: push: O(n), pop: O(1), top: O(1)
 # Space: O(n)
+# Pattern: Design (Single Queue)
+#
+# INTUITION:
+# Stack = LIFO, Queue = FIFO. On push, rotate queue so new element is at front.
+# Push then pop-and-requeue n-1 times. Now newest element is first out = LIFO!
 
 import collections
-
 
 class Queue(object):
     def __init__(self):

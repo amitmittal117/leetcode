@@ -1,5 +1,10 @@
 # Time:  O(nlogk)
 # Space: O(1)
+# Pattern: Heap / Divide and Conquer
+#
+# INTUITION:
+# Merge k lists efficiently. Heap: always extract smallest from k list heads.
+# Or divide and conquer: merge pairs recursively until one list remains. O(n log k).
 
 class ListNode(object):
     def __init__(self, x):

@@ -1,5 +1,10 @@
 # Time:  O(k), where k is the steps to be happy number
 # Space: O(k)
+# Pattern: Hash Set / Floyd's Cycle Detection
+#
+# INTUITION:
+# Keep computing sum of digit squares. Either reaches 1 (happy) or loops.
+# Detect loop with hash set or Floyd's cycle detection (fast/slow pointers).
 
 class Solution(object):
     # @param {integer} n

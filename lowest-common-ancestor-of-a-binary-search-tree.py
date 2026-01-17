@@ -1,5 +1,10 @@
 # Time:  O(n)
 # Space: O(1)
+# Pattern: Tree (BST Property)
+#
+# INTUITION:
+# In BST, LCA is where p and q split (one goes left, one goes right).
+# If both < root, go left. If both > root, go right. Otherwise, root is LCA!
 
 class Solution(object):
     # @param {TreeNode} root

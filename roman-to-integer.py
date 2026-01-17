@@ -1,5 +1,10 @@
 # Time:  O(n)
 # Space: O(1)
+# Pattern: String Parsing
+#
+# INTUITION:
+# Normally add values. But IV, IX, XL,... = smaller before larger = subtract.
+# If current < next, subtract; else add. Or handle subtraction by doubling.
 
 class Solution(object):
     # @return an integer
