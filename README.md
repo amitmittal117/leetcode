@@ -36,10 +36,16 @@ A progression-based guide to mastering algorithm patterns through [LeetCode](htt
 | 2 | Two Pointers 👆 | Reduce O(n²) to O(n) | [Guide](./patterns/two-pointers.md) |
 | 3 | Sliding Window 🪟 | Incremental window updates | [Guide](./patterns/sliding-window.md) |
 | 4 | Linked List 🔗 | Pointer manipulation | [Guide](./patterns/linked-list.md) |
-| 5 | Stack 📚 | LIFO for matching/nesting | - |
-| 6 | DFS/BFS 🌳 | Tree/graph traversal | - |
+| 5 | Monotonic Stack 📚 | Next greater/smaller element | [Guide](./patterns/monotonic-stack.md) |
+| 6 | Graph (DFS/BFS) 🌳 | Tree/graph traversal | [Guide](./patterns/graph.md) |
 | 7 | Dynamic Programming 📊 | Overlapping subproblems | [Guide](./patterns/dynamic-programming.md) |
-| 8 | Backtracking 🔄 | Explore all possibilities | - |
+| 8 | Backtracking 🔄 | Explore all possibilities | [Guide](./patterns/backtracking.md) |
+| 9 | Union-Find 🔗 | Disjoint set connectivity | [Guide](./patterns/union-find.md) |
+| 10 | Trie 🌲 | Prefix tree for strings | [Guide](./patterns/trie.md) |
+| 11 | Heap 🏔️ | Priority queue / top-k | [Guide](./patterns/heap.md) |
+| 12 | Greedy 💡 | Local optimal → global | [Guide](./patterns/greedy.md) |
+| 13 | Bit Manipulation 🔢 | Binary operations | [Guide](./patterns/bit-manipulation.md) |
+
 
 ---
 
