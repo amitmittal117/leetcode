@@ -1,8 +1,12 @@
 # Time:  O(n^3)
 # Space: O(1)
+# Pattern: Two Pointers (k-Sum)
+#
+# INTUITION:
+# Extension of 3sum. Fix first two elements, use two pointers for remaining two.
+# Sort first, skip duplicates. Or use hashmap for O(n²) pairs lookup.
 
 import collections
-
 
 # Two pointer solution. (1356ms)
 class Solution(object):

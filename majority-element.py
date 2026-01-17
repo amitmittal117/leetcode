@@ -1,9 +1,14 @@
 # majority-element.py
 # Time:  O(n)
 # Space: O(1)
+# Pattern: Boyer-Moore Voting Algorithm
+#
+# INTUITION:
+# Element appearing > n/2 times. Boyer-Moore: keep candidate and count.
+# If count = 0, switch candidate. Increment for match, decrement otherwise.
+# Majority element survives all cancellations!
 
 import collections
-
 
 class Solution(object):
     def majorityElement(self, nums):

@@ -1,5 +1,10 @@
 # Time:  O(n^2)
 # Space: O(1)
+# Pattern: Dynamic Programming (Building Row by Row)
+#
+# INTUITION:
+# Each element = sum of two above it. First and last of each row = 1.
+# Build row by row using previous row. DP relation: T[i][j] = T[i-1][j-1] + T[i-1][j].
 
 class Solution(object):
     # @return a list of lists of integers

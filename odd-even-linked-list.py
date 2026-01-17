@@ -1,5 +1,10 @@
 # Time:  O(n)
 # Space: O(1)
+# Pattern: Linked List (Pointer Manipulation)
+#
+# INTUITION:
+# Group odd-positioned nodes together, then even-positioned. Keep two lists
+# (odd and even), link even list to end of odd list. O(1) space!
 
 class Solution(object):
     def oddEvenList(self, head):

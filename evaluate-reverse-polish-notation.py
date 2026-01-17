@@ -1,7 +1,13 @@
 # Time:  O(n)
 # Space: O(n)
+# Pattern: Stack
+#
+# INTUITION:
+# RPN: operators come after operands. Use stack: push numbers, on operator
+# pop two, compute, push result. Much simpler than infix - no precedence needed!
 
 import operator
+
 
 class Solution(object):
     # @param tokens, a list of string

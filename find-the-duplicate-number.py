@@ -1,5 +1,10 @@
 # Time:  O(n)
 # Space: O(1)
+# Pattern: Floyd's Cycle Detection (Linked List)
+#
+# INTUITION:
+# Treat array as linked list: index -> nums[index]. Duplicate creates a cycle!
+# Floyd's algorithm finds cycle entry = duplicate number. O(1) space genius.
 
 class Solution(object):
     def findDuplicate(self, nums):

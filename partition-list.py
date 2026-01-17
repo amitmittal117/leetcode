@@ -1,5 +1,10 @@
 # Time:  O(n)
 # Space: O(1)
+# Pattern: Linked List (Two Lists Merge)
+#
+# INTUITION:
+# Partition around x: nodes < x before nodes >= x. Create two separate lists
+# (smaller and greater), traverse original adding to appropriate list, then join.
 
 class ListNode(object):
     def __init__(self, x):

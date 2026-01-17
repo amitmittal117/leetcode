@@ -1,5 +1,10 @@
 # Time:  O(m * n)
 # Space: O(m + n)
+# Pattern: Math (Grade School Multiplication)
+#
+# INTUITION:
+# Multiply digit by digit like grade school. Key insight: digit[i] * digit[j]
+# contributes to result[i+j] and result[i+j+1]. Process all pairs, handle carries.
 
 class Solution(object):
     def multiply(self, num1, num2):

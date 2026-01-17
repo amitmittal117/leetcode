@@ -1,5 +1,10 @@
 # Time:  O(nlogn)
 # Space: O(1)
+# Pattern: Sorting (Custom Comparator)
+#
+# INTUITION:
+# Form largest number by concatenating. Key: compare a+b vs b+a as strings.
+# If "9" + "34" = "934" > "349" = "34" + "9", then 9 should come first.
 
 class Solution(object):
     # @param num, a list of integers

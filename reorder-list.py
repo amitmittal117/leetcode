@@ -1,5 +1,10 @@
 # Time:  O(n)
 # Space: O(1)
+# Pattern: Linked List (Fast/Slow + Reverse + Merge)
+#
+# INTUITION:
+# Reorder L0→L1→...→Ln to L0→Ln→L1→Ln-1→... Three steps:
+# 1) Find middle with fast/slow. 2) Reverse second half. 3) Merge alternately.
 
 class ListNode(object):
     def __init__(self, x):

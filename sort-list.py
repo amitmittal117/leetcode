@@ -1,5 +1,10 @@
 # Time:  O(nlogn)
 # Space: O(logn) for stack call
+# Pattern: Linked List (Merge Sort)
+#
+# INTUITION:
+# Sort linked list in O(n log n). Merge sort is ideal for linked lists!
+# Split at middle (fast/slow), recursively sort both halves, merge.
 
 class ListNode(object):
     def __init__(self, x):

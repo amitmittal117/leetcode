@@ -1,8 +1,13 @@
 # Time:  O(n)
 # Space: O(n)
+# Pattern: Stack (Expression Evaluation)
+#
+# INTUITION:
+# Parse expression with operator precedence. Use two stacks: operands and operators.
+# Process * and / immediately (higher precedence), defer + and -. Or use
+# single stack: when seeing operator, process previous if same/higher precedence.
 
 import operator
-
 
 class Solution(object):
     def calculate(self, s):

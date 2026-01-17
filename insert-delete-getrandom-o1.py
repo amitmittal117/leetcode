@@ -1,7 +1,13 @@
 # Time:  O(1)
 # Space: O(n)
+# Pattern: Design (Hash Map + Array)
+#
+# INTUITION:
+# O(1) insert + delete + random. Array for random access, hashmap for O(1) lookup.
+# Delete trick: swap with last element, then pop. Hashmap stores val -> index.
 
 from random import randint
+
 
 class RandomizedSet(object):
 

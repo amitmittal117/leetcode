@@ -1,5 +1,10 @@
 # Time:  O(n)
 # Space: O(1)
+# Pattern: Greedy
+#
+# INTUITION:
+# If total gas >= total cost, solution exists. Track current tank: if goes negative,
+# start point can't be before current position. Start from next station.
 
 class Solution(object):
     # @param gas, a list of integers

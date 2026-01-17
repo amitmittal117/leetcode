@@ -1,5 +1,10 @@
 # Time:  O(n^2 ~ 2^n)
 # Space: O(n^2)
+# Pattern: Backtracking + DP (Palindrome Check)
+#
+# INTUITION:
+# Find all ways to partition string into palindromes. Backtracking: at each position,
+# try all palindromic prefixes, recurse on rest. Precompute isPalindrome[i][j] with DP.
 
 class Solution(object):
     def partition(self, s):

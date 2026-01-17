@@ -1,5 +1,10 @@
 # Time:  O(n)
 # Space: O(1)
+# Pattern: Math (Binary Addition with Carry)
+#
+# INTUITION:
+# Add from right, track carry. Each position: sum = a + b + carry.
+# result bit = sum % 2, carry = sum // 2. Same as decimal, base 2.
 
 class Solution(object):
     # @param a, a string

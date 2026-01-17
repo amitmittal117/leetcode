@@ -1,8 +1,12 @@
 # Time:  O(n)
 # Space: O(1)
+# Pattern: Bit Manipulation (State Machine)
+#
+# INTUITION:
+# Every number appears 3 times except one. Need counter mod 3 for each bit.
+# Use two variables (one, two) to track counts. State machine: 0→1→2→0.
 
 import collections
-
 
 class Solution(object):
     # @param A, a list of integer

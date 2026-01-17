@@ -1,5 +1,10 @@
 # Time:  O(n)
 # Space: O(1)
+# Pattern: Array (Reversal Trick)
+#
+# INTUITION:
+# Rotate array by k positions. Trick: reverse entire array, reverse first k,
+# reverse rest. Example: [1,2,3,4,5] k=2 → [5,4,3,2,1] → [4,5,3,2,1] → [4,5,1,2,3].
 
 class Solution(object):
     """

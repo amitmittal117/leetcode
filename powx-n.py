@@ -1,5 +1,10 @@
 # Time:  O(logn)
 # Space: O(1)
+# Pattern: Math (Binary Exponentiation)
+#
+# INTUITION:
+# x^n naively = O(n). But x^10 = x^5 * x^5, x^5 = x^2 * x^2 * x. Use binary!
+# If n is odd, multiply result by x. Square x, halve n. O(log n).
 
 class Solution(object):
     def myPow(self, x, n):
