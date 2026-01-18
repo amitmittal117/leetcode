@@ -1,3 +1,9 @@
+# Pattern: Greedy / Math (Arithmetic Sum)
+# INTUITION:
+# Add k smallest positive integers not in nums.
+# Start with sum 1+2+...+k. For each num in sorted set < k+1, replace and extend.
+# Use arithmetic sum formula for efficiency.
+
 # Time:  O(nlogn)
 # Space: O(n)
 

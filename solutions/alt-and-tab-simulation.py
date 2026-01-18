@@ -1,3 +1,9 @@
+# Pattern: Hash Table (Simulation)
+# INTUITION:
+# Process queries in reverse to find most recent window switches.
+# Use lookup array to track which windows have been brought to front.
+# Append remaining windows in original order.
+
 # Time:  O(n)
 # Space: O(n)
 

@@ -1,3 +1,8 @@
+# Pattern: Math (Digit Extraction)
+# INTUITION:
+# Extract digits from right to left, alternating signs.
+# Track sign flip with each digit. Final sign correction needed.
+
 # alternating-digit-sum.py
 # Time:  O(logn)
 # Space: O(1)

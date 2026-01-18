@@ -1,3 +1,8 @@
+# Pattern: Greedy (Sorting)
+# INTUITION:
+# Use largest boxes first to minimize number of boxes.
+# Sort capacity descending, accumulate until total apples covered.
+
 # Time:  O(nlogn)
 # Space: O(1)
 

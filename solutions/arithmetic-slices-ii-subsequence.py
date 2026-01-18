@@ -1,3 +1,9 @@
+# Pattern: Dynamic Programming + Hash Map (Subsequence Counting)
+# INTUITION:
+# dp[i][d] = count of arithmetic subsequences ending at i with difference d.
+# For each pair (j, i): extend all subsequences ending at j with same diff.
+# Only count subsequences of length >= 3.
+
 # Time:  O(n^2)
 # Space: O(n * d)
 

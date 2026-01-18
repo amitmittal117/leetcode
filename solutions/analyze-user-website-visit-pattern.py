@@ -1,3 +1,8 @@
+# Pattern: Hash Map + Combinatorics
+# INTUITION:
+# Group visits by user, sort by time. Generate all 3-website combinations per user.
+# Count unique patterns across users. Return lexicographically smallest with max count.
+
 # Time:  O(n^3)
 # Space: O(n^3)
 

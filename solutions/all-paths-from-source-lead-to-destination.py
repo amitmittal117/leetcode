@@ -1,3 +1,9 @@
+# Pattern: Graph (DFS + Cycle Detection)
+# INTUITION:
+# Check if all paths from source lead to destination (and end there).
+# Use 3-state DFS: unvisited, visiting, done. Detect cycles (visiting→visiting).
+# Verify: nodes without outgoing edges must be destination.
+
 # all-paths-from-source-lead-to-destination.py
 # Time:  O(n + e)
 # Space: O(n + e)

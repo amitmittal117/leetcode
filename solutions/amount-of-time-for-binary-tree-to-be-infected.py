@@ -1,3 +1,9 @@
+# Pattern: Tree (BFS / DFS + Tree DP)
+# INTUITION:
+# Infection spreads to adjacent nodes each minute.
+# Convert tree to graph (add parent edges), BFS from start node.
+# Or: Tree DP tracking height and distance to start for each subtree.
+
 # Time:  O(n)
 # Space: O(h)
 

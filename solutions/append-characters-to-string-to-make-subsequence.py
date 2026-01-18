@@ -1,3 +1,9 @@
+# Pattern: Two Pointers / Greedy (Subsequence Matching)
+# INTUITION:
+# Find longest prefix of t that is a subsequence of s.
+# Use two pointers: scan s to match characters of t in order.
+# Answer = len(t) - matched characters.
+
 # Time:  O(n)
 # Space: O(1)
 

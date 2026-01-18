@@ -1,3 +1,9 @@
+# Pattern: Dynamic Programming (Interval DP / k-Partition)
+# INTUITION:
+# Place k mailboxes to minimize total distance to all houses.
+# DP: dp[j] = min cost for first j+1 houses with m mailboxes.
+# Key insight: optimal mailbox for sorted houses is at median.
+
 # Time:  O(m * n^2)
 # Space: O(n)
 

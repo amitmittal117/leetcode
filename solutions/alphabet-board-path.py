@@ -1,3 +1,9 @@
+# Pattern: String / Simulation (Grid Navigation)
+# INTUITION:
+# Alphabet board is a 5x5+1 grid. Calculate row/col for each character.
+# Move U/L before D/R to avoid going out of bounds (special case for 'z').
+# Move step by step from current position to target.
+
 # Time:  O(n)
 # Space: O(1)
 

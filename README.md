@@ -69,7 +69,7 @@ A progression-based guide to mastering algorithm patterns through [LeetCode](htt
 
 ---
 
-## Progress: 146 / 3056 files ✅
+## Progress: 166 / 3056 files ✅
 
 ---
 

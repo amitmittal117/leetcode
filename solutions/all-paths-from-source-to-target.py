@@ -1,3 +1,9 @@
+# Pattern: Graph (DFS + Backtracking)
+# INTUITION:
+# Find all paths from node 0 to node n-1 in a DAG.
+# DFS with backtracking: add node to path, recurse on neighbors, remove node.
+# DAG property means no cycle detection needed.
+
 # Time:  O(p + r * n), p is the count of all the possible paths in graph,
 #                      r is the count of the result.
 # Space: O(n)

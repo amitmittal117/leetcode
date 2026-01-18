@@ -1,3 +1,9 @@
+# Pattern: Sliding Window (Circular Array)
+# INTUITION:
+# Count groups of k adjacent tiles with alternating colors on circular array.
+# Use sliding window, track count of alternating adjacent pairs.
+# Handle circular nature by extending iteration by k-1.
+
 # alternating-groups-i.py
 # Time:  O(n)
 # Space: O(1)

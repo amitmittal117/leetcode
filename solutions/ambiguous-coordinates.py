@@ -1,3 +1,9 @@
+# Pattern: String (Enumeration / Cartesian Product)
+# INTUITION:
+# Split string into two parts, generate valid numbers for each part.
+# Valid number: no leading zeros (except "0"), no trailing zeros after decimal.
+# Use Cartesian product to combine all valid (x, y) pairs.
+
 # Time:  O(n^4)
 # Space: O(n)
 

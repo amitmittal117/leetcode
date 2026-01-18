@@ -1,3 +1,9 @@
+# Pattern: Dynamic Programming (String Matching)
+# INTUITION:
+# Find positions where s1[i] != s2[i]. Pair them to flip.
+# Two options: pair adjacent diff positions (cost = distance*2), or pair any two (cost = x).
+# DP tracks min cost, ensuring even number of diffs (parity check).
+
 # Time:  O(n)
 # Space: O(1)
 

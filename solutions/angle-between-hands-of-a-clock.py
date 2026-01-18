@@ -1,3 +1,9 @@
+# Pattern: Math (Clock Angle)
+# INTUITION:
+# Hour hand: 0.5° per minute (30°/hour). Minute hand: 6° per minute.
+# Calculate both positions, find absolute difference.
+# Take smaller of angle and (360 - angle).
+
 # Time:  O(1)
 # Space: O(1)
 

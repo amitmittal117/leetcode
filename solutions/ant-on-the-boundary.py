@@ -1,3 +1,8 @@
+# Pattern: Prefix Sum (Counting Zero Crossings)
+# INTUITION:
+# Ant starts at 0, moves by nums[i] each step.
+# Count how many times position returns to 0 (prefix sum = 0).
+
 # ant-on-the-boundary.py
 # Time:  O(n)
 # Space: O(1)

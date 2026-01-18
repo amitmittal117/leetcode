@@ -1,3 +1,9 @@
+# Pattern: Dynamic Programming (Bitmask DP)
+# INTUITION:
+# Count valid patterns of length m to n on a 3x3 grid.
+# dp[mask][j] = patterns ending at j with visited set = mask.
+# Skip moves require intermediate key to be in visited set.
+
 # android-unlock-patterns.py
 # Time:  O(9^2 * 2^9)
 # Space: O(9 * 2^9)

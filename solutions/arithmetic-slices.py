@@ -1,3 +1,9 @@
+# Pattern: Dynamic Programming / Array (Counting Arithmetic Subarrays)
+# INTUITION:
+# Arithmetic slice = at least 3 elements with constant difference.
+# Extend slices: each new valid element adds (length - 2) new slices.
+# Reset count when difference changes.
+
 # arithmetic-slices.py
 # Time:  O(n)
 # Space: O(1)

@@ -1,3 +1,9 @@
+# Pattern: Tree / Recursion with Memoization (Catalan Numbers)
+# INTUITION:
+# Full binary tree has all nodes with 0 or 2 children. Only odd N works.
+# Recursively split N-1 nodes into left/right subtrees: (1,N-2), (3,N-4), ...
+# Memoize results to avoid recomputation. Count follows Catalan numbers.
+
 # Time:  O(n * 4^n / n^(3/2)) ~= sum of Catalan numbers from 1 .. N
 # Space: O(n * 4^n / n^(3/2)) ~= sum of Catalan numbers from 1 .. N
 
