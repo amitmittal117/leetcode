@@ -1,3 +1,4 @@
+# minimum-sum-of-squared-difference.py
 # Time:  O(nlogn + nlogr), r is max((abs(i-j) for i, j in itertools.izip(nums1, nums2))
 # Space: O(n)
 
