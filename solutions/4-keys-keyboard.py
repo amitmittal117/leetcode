@@ -1,3 +1,4 @@
+# 4-keys-keyboard.py
 # Pattern: Math / Dynamic Programming
 # INTUITION:
 # Maximize 'A's with N keystrokes. After ~6 keys, Ctrl-A, Ctrl-C, Ctrl-V sequence pays off.
