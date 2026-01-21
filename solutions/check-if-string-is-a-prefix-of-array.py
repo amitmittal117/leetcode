@@ -1,3 +1,4 @@
+# check-if-string-is-a-prefix-of-array.py
 # Time:  O(n)
 # Space: O(1)
 
