@@ -1,3 +1,4 @@
+# longest-common-suffix-queries.py
 # Time:  O((n + q) * l)
 # Space: O(t)
 
